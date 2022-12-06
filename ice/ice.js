@@ -149,6 +149,7 @@ vec3 dir(vec2 uv, vec3 ro, vec3 t, float z) {
   return d;
 }
 
+// gl_FragDepth gl_FragCoord
 void main(void) {
   vec2 uv = (
     gl_FragCoord.xy -.5 * resolution.xy

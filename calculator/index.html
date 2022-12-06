@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор на JS</title>
+    <style>
+        body {
+            background: rebeccapurple;
+        }
+
+        .bt1,
+        .bt2,
+        .bt3,
+        .bt4 {
+            margin-top: -10px;
+            width: 40px;
+            height: 40px;
+            transform: translate(230%, 0%)
+        }
+
+        .bt5 {
+            width: 85px;
+            height: 50px;
+            transform: translate(107%, 0%);
+            margin-top: 50;
+        }
+
+        div.container {
+            height: 14em;
+            position: relative;
+        }
+
+        .container .cont {
+            margin: 0;
+            background: rgb(158, 193, 200);
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid black;
+        }
+
+        .container .cont .cont1 {
+            transform: translate(32%, 0%);
+            margin-top: -10px;
+        }
+
+        .container .cont .cont2 {
+            transform: translate(36%, 0%)
+        }
+
+        .container .cont .cont3 {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .container .cont .cont4 {
+            margin-top: -10px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .container .cont .cont5 {
+            margin-top: -10px;
+            transform: translate(35%, 0%);
+        }
+
+        .container .cont .cont6 {
+            margin-top: 7px;
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="cont">
+            <div class="cont1">
+                <h2>Калькулятор:</h2>
+            </div>
+            <div class="cont4">
+                <input type="number" class="input-in-1" placeholder="Первое число">
+                <input type="number" class="input-in-2" placeholder="Второе число">
+            </div>
+            <div class="cont5">
+                <h3>Операция:</h3>
+            </div>
+            <button class="bt1">*</button>
+            <button class="bt2">+</button>
+            <button class="bt3">-</button>
+            <button class="bt4">/</button>
+            <br>
+            <div class="cont6">
+                <button class="bt5">Возведение в степень</button>
+            </div>
+            <div class="cont2">
+                <h3>Результат:</h3>
+            </div>
+            <div class="cont3">
+                <input type="number" class="answer" readonly>
+                <button class="btClear">Очистить</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+<!-- value="Ваш ответ" -->
